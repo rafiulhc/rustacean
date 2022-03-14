@@ -1,17 +1,12 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
-#[derive(Debug)]
-struct Person<'a> {
-    name: &'a str,
-    age: u8
-}
+
+use std::mem;
 
 fn main() {
-    let name = "Peter";
-    let age = 27;
-    let peter = Person { name, age };
+    let num : u64 = 7777777777777777777;
 
     // Pretty print
-    println!("{:#?}", peter.name);
+    println!("num = {} ", mem::size_of_val(&num));
 }
 
