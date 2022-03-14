@@ -4,8 +4,8 @@
 
 
 fn main() {
-    let num = 1000;
-
+    let num = 1 | 3;
+    println!("{}", num);
    if num < 1 {
     println!("Zero");
    } else if num <= 100 {
