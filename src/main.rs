@@ -1,12 +1,21 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
 
-use std::mem;
+
 
 fn main() {
-    let num : u64 = 7777777777777777777;
+    let num = 1000;
 
-    // Pretty print
-    println!("num = {} ", mem::size_of_val(&num));
+   if num < 1 {
+    println!("Zero");
+   } else if num <= 100 {
+         println!("Small number");
+    } else if num <= 1000 {
+         println!("Medium number");
+    } else if num <= 10000 {
+         println!("Big number");
+   } else {
+         println!("Huge");
+   }
 }
 
