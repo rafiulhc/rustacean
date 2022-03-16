@@ -18,6 +18,7 @@ fn main() {
    } else {
          println!("Huge");
    }
-   let day = if temp > 20 {println!("It a hot day") } else {println!("It's a cold day")};
+   let day = if temp > 20 {"It a hot day"} else {"It's a cold day"};
+   println!("{}", day);
 }
 
