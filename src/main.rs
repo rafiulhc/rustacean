@@ -4,6 +4,7 @@
 
 
 fn main() {
+    let temp = 18;
     let num = 1 | 3;
     println!("{}", num);
    if num < 1 {
@@ -17,5 +18,6 @@ fn main() {
    } else {
          println!("Huge");
    }
+   let day = if temp > 20 {println!("It a hot day") } else {println!("It's a cold day")};
 }
 
