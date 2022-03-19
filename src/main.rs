@@ -2,23 +2,16 @@
 #![allow(unused_variables)]
 
 
+fn while_loop(){
+      let mut x = 2;
+      while x < 1000 {
+            x *= 2;
+            if x == 64 { continue;}
+            println!(" x = {}", x);
+      }
+}
 
 fn main() {
-    let temp = 18;
-    let num = 1 | 3;
-    println!("{}", num);
-   if num < 1 {
-    println!("Zero");
-   } else if num <= 100 {
-         println!("Small number");
-    } else if num <= 1000 {
-         println!("Medium number");
-    } else if num <= 10000 {
-         println!("Big number");
-   } else {
-         println!("Huge");
-   }
-   let day = if temp > 20 {"It a hot day"} else {"It's a cold day"};
-   println!("{}", day);
+    while_loop();
 }
 
