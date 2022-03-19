@@ -18,8 +18,18 @@ fn for_loop(){
             println!(" y = {}", y);
       }
 }
+
+fn country_code(){
+      let my_country = 1000;
+      match my_country {
+            4 => println!("I am from the UK"),
+            1 => println!("I am from the USA"),
+            2 => println!("I am from Germany"),
+            5..=1000 => println!("I am from somewhere else"),
+            _ => println!("invalid country code"),
+      }
+}
 fn main() {
-    while_loop();
-    for_loop();
+      country_code();
 }
 
