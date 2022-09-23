@@ -10,4 +10,23 @@
 // * Use a match expression to determine which message to display
 // * Use an underscore (_) to match on any value
 
-fn main() {}
+fn main() {
+    let num = 5;
+    match num {
+        1 => println!("one"),
+        2 => println!("two"),
+        3 => println!("three"),
+        _ => println!("other"),
+    }
+
+    let mut my_num = 5;
+
+    loop {
+        println!("myNum is {}", my_num);
+        my_num -= 1;
+        if my_num == 0 {
+            break;
+        }
+    }
+
+}
